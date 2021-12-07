@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert("Empty input");
             } else {
 
-                if (nameUserValue.match(regExp)) {
-                    alert("Name has a numbers!")
+                if (!nameUserValue.match(regExp)) {
+                    alert("Name has a numbers")
+                } else {
+                    alert("Name hasn't a numbers!")
                 }
 
                 if (isNaN(phoneUserValue)) {
